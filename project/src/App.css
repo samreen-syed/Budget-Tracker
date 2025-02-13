@@ -74,6 +74,41 @@ input {
   border-radius: 4px;
 }
 
+/* Password Input Group */
+.password-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Style the Password Input */
+.password-group input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px; /* Space for the eye button */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Eye Button Styling */
+.eye-button {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  font-size: 18px;
+  outline: none;
+}
+
+/* Ensure input field and button are properly aligned */
+.password-group input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
 button {
   background-color: var(--secondary-color);
   color: white;
